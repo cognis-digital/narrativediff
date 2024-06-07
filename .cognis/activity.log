@@ -36,3 +36,4 @@
 2025-10-09T10:32:52  chore: IRONCLAD hardening pass
 2026-01-26T17:49:59  chore: ATHENA-PRIME calibration
 2026-06-01T12:06:06  feat: PROMETHEUS unbound
+2024-06-07T08:12:12  feat(engine): simplify the walker
