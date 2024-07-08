@@ -38,3 +38,4 @@
 2026-06-01T12:06:06  feat: PROMETHEUS unbound
 2024-06-07T08:12:12  feat(engine): simplify the walker
 2024-07-01T15:29:19  perf(detect): document the config keys
+2024-07-08T10:46:26  test(fixtures): handle CRLF line endings
