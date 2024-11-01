@@ -44,3 +44,4 @@
 2024-09-04T19:37:47  refactor(scoring): bump the dev toolchain
 2024-09-29T14:54:54  test(cli): reduce false positives on edge cases
 2024-10-24T09:11:01  chore: bump dev tooling
+2024-11-01T16:28:08  chore(format): improve the demo scenario
