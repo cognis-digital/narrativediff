@@ -49,3 +49,4 @@
 2024-12-03T18:02:22  perf(parser): tune severity weights
 2024-12-28T13:19:29  style(output): memoize repeated lookups
 2025-01-22T08:36:36  chore(cache): add color + severity icons
+2025-01-29T15:53:43  docs(rules): add usage examples to help
