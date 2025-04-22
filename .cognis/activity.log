@@ -53,3 +53,4 @@
 2025-02-23T10:10:50  perf(report): trim whitespace in parsed fields
 2025-03-21T17:27:57  style(tests): improve the demo scenario
 2025-03-28T12:44:04  fix(cli): short-circuit on first critical
+2025-04-22T19:01:11  docs(engine): pin the test dependencies
