@@ -56,3 +56,4 @@
 2025-04-22T19:01:11  docs(engine): pin the test dependencies
 2025-04-29T14:18:18  docs: standing on the shoulders of giants (garak, sigma, trufflehog)
 2025-05-24T09:35:25  test(docs): add color + severity icons
+2025-06-19T16:52:32  fix: handle empty input gracefully
