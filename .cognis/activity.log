@@ -58,3 +58,4 @@
 2025-05-24T09:35:25  test(docs): add color + severity icons
 2025-06-19T16:52:32  fix: handle empty input gracefully
 2025-06-26T11:09:39  docs(output): dedupe overlapping findings
+2025-07-20T18:26:46  refactor(ci): add a regression fixture
