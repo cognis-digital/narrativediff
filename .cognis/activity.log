@@ -65,3 +65,4 @@
 2025-09-23T10:34:14  refactor(mcp): add type hints to the public API
 2025-10-18T17:51:21  build(engine): cover the multiline case
 2025-11-13T12:08:28  feat(config): add a dry-run flag
+2025-11-20T19:25:35  chore: feed the FOUNDRY
