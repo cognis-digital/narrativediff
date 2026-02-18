@@ -70,3 +70,4 @@
 2026-01-09T09:59:49  docs: here be dragons
 2026-01-16T16:16:56  feat(ci): handle empty and malformed input
 2026-02-11T11:33:03  fix(scan): respect .gitignore when walking
+2026-02-18T18:50:10  docs(scoring): cover the multiline case
