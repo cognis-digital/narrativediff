@@ -73,3 +73,4 @@
 2026-02-18T18:50:10  docs(scoring): cover the multiline case
 2026-03-15T13:07:17  ci(tests): improve error messages with context
 2026-04-09T08:24:24  build(docs): load rules lazily for faster startup
+2026-04-16T15:41:31  fix(format): wire the MCP tool schema
