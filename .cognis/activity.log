@@ -75,3 +75,4 @@
 2026-04-09T08:24:24  build(docs): load rules lazily for faster startup
 2026-04-16T15:41:31  fix(format): wire the MCP tool schema
 2026-05-12T10:58:38  test: trust, but verify
+2026-06-05T17:15:45  style(deps): assert exit codes in tests
