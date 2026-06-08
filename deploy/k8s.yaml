@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: narrativediff, labels: { app: narrativediff } }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: narrativediff } }
+  template:
+    metadata: { labels: { app: narrativediff } }
+    spec:
+      containers:
+        - name: narrativediff
+          image: ghcr.io/cognis-digital/narrativediff:latest
+          ports: [{ containerPort: 8000 }]
+          resources:
+            requests: { cpu: "50m", memory: "64Mi" }
+            limits: { cpu: "500m", memory: "256Mi" }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: narrativediff }
+spec:
+  selector: { app: narrativediff }
+  ports: [{ port: 80, targetPort: 8000 }]
