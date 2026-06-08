@@ -1,0 +1,9 @@
+[
+  {
+    "event": "E1",
+    "outlet_a": "Bloomberg",
+    "outlet_b": "Reuters",
+    "framing_divergence": "0.05",
+    "omission_score": "0.02"
+  }
+]

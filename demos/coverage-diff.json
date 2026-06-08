@@ -1,0 +1,16 @@
+[
+  {
+    "event": "E1",
+    "outlet_a": "A",
+    "outlet_b": "B",
+    "framing_divergence": "0.78",
+    "omission_score": "0.4"
+  },
+  {
+    "event": "E2",
+    "outlet_a": "C",
+    "outlet_b": "D",
+    "framing_divergence": "0.3",
+    "omission_score": "0.82"
+  }
+]

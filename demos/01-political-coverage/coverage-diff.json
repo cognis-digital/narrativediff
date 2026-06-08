@@ -1,0 +1,26 @@
+[
+  {
+    "event": "E1",
+    "outlet_a": "Fox News",
+    "outlet_b": "MSNBC",
+    "framing_divergence": "0.86",
+    "omission_score": "0.42",
+    "topic": "immigration-bill"
+  },
+  {
+    "event": "E2",
+    "outlet_a": "WSJ",
+    "outlet_b": "NYT",
+    "framing_divergence": "0.71",
+    "omission_score": "0.55",
+    "topic": "climate-policy"
+  },
+  {
+    "event": "E3",
+    "outlet_a": "Reuters",
+    "outlet_b": "AP",
+    "framing_divergence": "0.12",
+    "omission_score": "0.05",
+    "topic": "earnings"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "event": "royal-family-x",
+    "outlet_a": "Daily Mail",
+    "outlet_b": "FT",
+    "framing_divergence": "0.92",
+    "omission_score": "0.78"
+  }
+]
