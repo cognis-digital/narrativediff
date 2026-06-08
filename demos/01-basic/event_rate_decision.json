@@ -1,0 +1,30 @@
+{
+  "event": "Central bank surprise rate decision",
+  "articles": [
+    {
+      "outlet": "WireService",
+      "headline": "Central bank raises interest rate by half a point",
+      "body": "The central bank said on Thursday it raised its benchmark interest rate by half a percentage point. The governor stated the decision was approved in a seven to two vote. Officials told reporters the move was aimed at inflation. The bank announced it would review policy again next quarter."
+    },
+    {
+      "outlet": "MarketDaily",
+      "headline": "Bold and decisive: central bank delivers historic rate hike",
+      "body": "In a decisive and historic move, the central bank raised its benchmark interest rate by half a percentage point. The governor reassured investors that the economy remains resilient and strong. Analysts praised the seven to two vote as a successful and bold step. Markets welcomed the decision as optimistic for growth."
+    },
+    {
+      "outlet": "PopulistPost",
+      "headline": "SHOCKING rate hike sparks CHAOS as families face crisis!",
+      "body": "The central bank slammed households with a shocking interest rate hike of half a percentage point, sparking chaos and outrage. Critics blasted the reckless decision as a disaster for ordinary families already in crisis. The seven to two vote was branded a scandal. The governor refused to rule out more alarming hikes."
+    },
+    {
+      "outlet": "GlobalLedger",
+      "headline": "Central bank reportedly lifts rate amid uncertainty",
+      "body": "The central bank reportedly raised its benchmark interest rate by half a percentage point, according to sources. The move could affect mortgages, analysts suggested, though the impact remains unconfirmed. Sources said the seven to two vote may signal further action. The governor allegedly cited inflation as the main reason."
+    },
+    {
+      "outlet": "OppositionWatch",
+      "headline": "Reckless central bank rate hike a failure for working people",
+      "body": "The central bank pushed through a reckless interest rate hike of half a percentage point, a move critics called a failure. The decision threatens jobs and risks a dangerous slowdown. The governor was accused of being out of touch as the controversial hike piled pressure on households and threatened the recovery."
+    }
+  ]
+}
