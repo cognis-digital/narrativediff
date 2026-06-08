@@ -1,35 +1,11 @@
-"""NARRATIVEDIFF - News bias & framing diff across many outlets per event.
-
-A zero-dependency, standard-library-only engine that compares how different
-news outlets cover the SAME event. It surfaces:
-
-  * Bias / loaded language (intensity + direction) per outlet
-  * Framing fingerprints (which sub-topics / angles each outlet emphasizes)
-  * Selective omission (facts present in some outlets, missing in others)
-  * Headline-vs-body sensationalism
-  * Cross-outlet divergence ranking
-
-Spirit of the Media-Bias-Group/MBIB project, but offline and deterministic.
-"""
-from .core import (
-    Article,
-    EventCorpus,
-    OutletReport,
-    DiffResult,
-    analyze_event,
-    load_corpus,
-)
-
-TOOL_NAME = "narrativediff"
-TOOL_VERSION = "1.0.0"
-
-__all__ = [
-    "Article",
-    "EventCorpus",
-    "OutletReport",
-    "DiffResult",
-    "analyze_event",
-    "load_corpus",
-    "TOOL_NAME",
-    "TOOL_VERSION",
-]
+"""narrativediff — part of the Cognis Neural Suite."""
+try:  # re-export the tool's public API + identity from core
+    from narrativediff.core import *  # noqa: F401,F403
+except Exception:  # pragma: no cover
+    pass
+try:
+    from narrativediff.core import TOOL_NAME, TOOL_VERSION
+except Exception:  # pragma: no cover
+    TOOL_NAME = "narrativediff"
+    TOOL_VERSION = "0.1.0"
+__version__ = TOOL_VERSION
