@@ -36,7 +36,9 @@ News bias & framing diff across 50+ outlets per event — without standing up he
 <a name="features"></a>
 ## Features
 
-- ✅ Scan
+- ✅ Analyze Event
+- ✅ Load Corpus
+- ✅ Result To Dict
 - ✅ Runs on Linux/macOS/Windows · Docker · devcontainer
 - ✅ Ports in Python, JavaScript, Go, and Rust (`ports/`)
 
