@@ -16,7 +16,7 @@
 </div>
 
 ```bash
-pip install cognis-narrativediff
+pip install "git+https://github.com/cognis-digital/narrativediff.git"
 narrativediff scan .            # → prioritized findings in seconds
 ```
 
@@ -48,7 +48,7 @@ News bias & framing diff across 50+ outlets per event — without standing up he
 ## Quick start
 
 ```bash
-pip install cognis-narrativediff
+pip install "git+https://github.com/cognis-digital/narrativediff.git"
 narrativediff --version
 narrativediff scan .                       # scan current project
 narrativediff scan . --format json         # machine-readable
