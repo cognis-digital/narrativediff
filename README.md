@@ -20,6 +20,32 @@ pip install cognis-narrativediff
 narrativediff scan .            # → prioritized findings in seconds
 ```
 
+## Usage — step by step
+
+`narrativediff` diffs news bias and framing across many outlets for a single
+event. Console script: `narrativediff`.
+
+1. **Install** from a clone:
+   ```bash
+   pip install -e .
+   ```
+2. **Run the full bias/framing diff** on an event corpus JSON:
+   ```bash
+   narrativediff diff corpus.json
+   ```
+3. **Quick per-outlet scan** — one bias line per outlet:
+   ```bash
+   narrativediff outlets corpus.json
+   ```
+4. **Read the output** — `--format json` for downstream analysis:
+   ```bash
+   narrativediff --format json diff corpus.json | jq '.bias_spread, .divergence_ranking'
+   ```
+5. **Automate** — batch many events through a pipeline:
+   ```bash
+   for f in events/*.json; do narrativediff --format json diff "$f" > "out/$(basename "$f")"; done
+   ```
+
 ## Contents
 
 - [Why narrativediff?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
