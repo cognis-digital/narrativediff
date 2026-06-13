@@ -20,6 +20,12 @@ pip install "git+https://github.com/cognis-digital/narrativediff.git"
 narrativediff scan .            # → prioritized findings in seconds
 ```
 
+<!-- cognis:layman:start -->
+## What is this?
+
+narrativediff compares how different news outlets cover the same event, showing you which ones use favorable or alarming language, which ones leave out details that others mention, and how far apart the coverage really is. You give it a list of articles about one event and it produces a side-by-side breakdown: bias scores, charged words, hedging, sensationalism, and the facts each outlet chose to omit. It is a tool for journalists, researchers, and anyone who wants to see through spin and understand how the same story gets told very differently depending on where you read it.
+<!-- cognis:layman:end -->
+
 ## Contents
 
 - [Why narrativediff?](#why) · [Features](#features) · [Quick start](#quick-start) · [Example](#example) · [Architecture](#architecture) · [AI stack](#ai-stack) · [How it compares](#how-it-compares) · [Integrations](#integrations) · [Install anywhere](#install-anywhere) · [Related](#related) · [Contributing](#contributing)
@@ -45,6 +51,42 @@ News bias & framing diff across 50+ outlets per event — without standing up he
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:install:start -->
+## Install
+
+`narrativediff` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/narrativediff/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/narrativediff/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/narrativediff.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/narrativediff.git"  # uv
+pip install "git+https://github.com/cognis-digital/narrativediff.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/narrativediff.git
+cd narrativediff && pip install .
+```
+
+Then run:
+```sh
+narrativediff --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
