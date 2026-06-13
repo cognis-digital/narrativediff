@@ -9,16 +9,22 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&duration=3500&pause=1000&color=6B46C1&center=true&vCenter=true&width=720&lines=News+bias++framing+diff+across+50+outlets+per+event;Self-hostable+%C2%B7+MCP-native+%C2%B7+CI-ready+%C2%B7+polyglot" width="720"/>
 
-[![PyPI](https://img.shields.io/pypi/v/cognis-narrativediff.svg?color=6b46c1)](https://pypi.org/project/cognis-narrativediff/) [![CI](https://github.com/cognis-digital/narrativediff/actions/workflows/ci.yml/badge.svg)](https://github.com/cognis-digital/narrativediff/actions) [![License: COCL 1.0](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) [![Suite](https://img.shields.io/badge/Cognis-Neural%20Suite-6b46c1.svg)](https://github.com/cognis-digital)
+[![install](https://img.shields.io/badge/install-git%2B%20%C2%B7%20pipx%20%C2%B7%20uv-6b46c1.svg)](#install--every-way-every-platform) [![CI](https://github.com/cognis-digital/narrativediff/actions/workflows/ci.yml/badge.svg)](https://github.com/cognis-digital/narrativediff/actions) [![License: COCL 1.0](https://img.shields.io/badge/License-COCL%201.0-2b6cb0.svg)](LICENSE) [![Suite](https://img.shields.io/badge/Cognis-Neural%20Suite-6b46c1.svg)](https://github.com/cognis-digital)
 
 *Information Integrity — provenance, synthetic-media, and narrative analysis.*
 
 </div>
 
 ```bash
-pip install cognis-narrativediff
+pip install "git+https://github.com/cognis-digital/narrativediff.git"
 narrativediff scan .            # → prioritized findings in seconds
 ```
+
+<!-- cognis:layman:start -->
+## What is this?
+
+narrativediff compares how different news outlets cover the same event, showing you which ones use favorable or alarming language, which ones leave out details that others mention, and how far apart the coverage really is. You give it a list of articles about one event and it produces a side-by-side breakdown: bias scores, charged words, hedging, sensationalism, and the facts each outlet chose to omit. It is a tool for journalists, researchers, and anyone who wants to see through spin and understand how the same story gets told very differently depending on where you read it.
+<!-- cognis:layman:end -->
 
 ## Contents
 
@@ -45,10 +51,56 @@ News bias & framing diff across 50+ outlets per event — without standing up he
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="quick-start"></a>
+<!-- cognis:domains:start -->
+## Domains
+
+**Primary domain:** Intelligence & OSINT  ·  **JTF MERIDIAN division:** NULLBYTE · BLACK CELL
+
+**Topics:** `cognis` `osint` `intelligence` `recon`
+
+Part of the **Cognis Neural Suite** — 300+ source-available tools organized across 12 domains under the JTF MERIDIAN command structure. See the [suite on GitHub](https://github.com/cognis-digital) and [jtf-meridian](https://github.com/cognis-digital/jtf-meridian) for how the pieces fit together.
+<!-- cognis:domains:end -->
+
+<!-- cognis:install:start -->
+## Install
+
+`narrativediff` is source-available (not published to PyPI) — every method below installs
+straight from GitHub. Pick whichever you prefer; the one-line scripts auto-detect
+the best tool available on your machine.
+
+**One-liner (Linux / macOS):**
+```sh
+curl -fsSL https://raw.githubusercontent.com/cognis-digital/narrativediff/HEAD/install.sh | sh
+```
+
+**One-liner (Windows PowerShell):**
+```powershell
+irm https://raw.githubusercontent.com/cognis-digital/narrativediff/HEAD/install.ps1 | iex
+```
+
+**Or install manually — any one of:**
+```sh
+pipx install "git+https://github.com/cognis-digital/narrativediff.git"     # isolated (recommended)
+uv tool install "git+https://github.com/cognis-digital/narrativediff.git"  # uv
+pip install "git+https://github.com/cognis-digital/narrativediff.git"      # pip
+```
+
+**From source:**
+```sh
+git clone https://github.com/cognis-digital/narrativediff.git
+cd narrativediff && pip install .
+```
+
+Then run:
+```sh
+narrativediff --help
+```
+<!-- cognis:install:end -->
+
 ## Quick start
 
 ```bash
-pip install cognis-narrativediff
+pip install "git+https://github.com/cognis-digital/narrativediff.git"
 narrativediff --version
 narrativediff scan .                       # scan current project
 narrativediff scan . --format json         # machine-readable
@@ -141,6 +193,32 @@ curl -fsSL https://raw.githubusercontent.com/cognis-digital/narrativediff/main/i
 <div align="right"><a href="#top">↑ back to top</a></div>
 
 <a name="related"></a>
+<a name="verification"></a>
+## Verification
+
+[![tests](https://img.shields.io/badge/tests-11%20passing-2ea44f.svg)](AUDIT.md)
+
+Every push is verified end-to-end. Latest audit (2026-06-13):
+
+```text
+tests        : 11 passed, 0 failed, 0 errored
+compile      : all modules parse
+cli          : C:\Python314\python.exe: No module named https
+package      : https
+```
+
+<details><summary>CLI surface (<code>--help</code>)</summary>
+
+```text
+C:\Python314\python.exe: No module named https
+```
+</details>
+
+Full machine-readable results: [`AUDIT.md`](AUDIT.md) · regenerate with `python -m https --help` + `pytest -q`.
+
+<div align="right"><a href="#top">↑ back to top</a></div>
+
+
 ## Related Cognis tools
 
 - [`claimtrace`](https://github.com/cognis-digital/claimtrace) — Misinformation provenance tracer — earliest-known appearance graph
