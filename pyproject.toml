@@ -36,3 +36,6 @@ narrativediff = "narrativediff.cli:main"
 
 [tool.hatch.build.targets.wheel]
 packages = ["narrativediff"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
