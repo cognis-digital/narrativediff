@@ -113,9 +113,12 @@ def main(argv: Optional[List[str]] = None) -> int:
     except FileNotFoundError:
         print(f"error: corpus file not found: {args.corpus}", file=sys.stderr)
         return 2
-    except (ValueError, json.JSONDecodeError) as exc:
+    except (ValueError, json.JSONDecodeError, TypeError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
+    except OSError as exc:
+        print(f"error: cannot read corpus file: {exc}", file=sys.stderr)
+        return 2
 
     result_dict = result_to_dict(result)
 

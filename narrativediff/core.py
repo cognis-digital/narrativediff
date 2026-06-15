@@ -28,7 +28,7 @@ LOADED_LEXICON: Dict[str, float] = {
     "disaster": -2.0, "shocking": -1.5, "outrage": -2.0, "outrageous": -2.0,
     "scandal": -2.0, "failed": -1.5, "failure": -1.5, "collapse": -2.0,
     "radical": -1.5, "extremist": -2.0, "reckless": -1.5, "botched": -2.0,
-    "plunge": -1.5, "plunged": -1.5, "slammed": -2.0, "furious": -1.5,
+    "plunge": -1.5, "plunged": -1.5, "furious": -1.5,
     "alarming": -1.5, "threat": -1.0, "threatens": -1.0, "dangerous": -1.5,
     "controversial": -1.0, "backlash": -1.5, "meltdown": -2.0,
     "desperate": -1.5, "refused": -1.0, "admitted": -1.0, "forced": -1.0,
@@ -315,8 +315,13 @@ def load_corpus(path: str) -> EventCorpus:
         data = json.load(fh)
     if not isinstance(data, dict) or "articles" not in data:
         raise ValueError("corpus JSON must be an object with an 'articles' list")
+    raw_articles = data["articles"]
+    if not isinstance(raw_articles, list):
+        raise ValueError(
+            f"'articles' must be a JSON array, got {type(raw_articles).__name__}"
+        )
     articles = []
-    for i, a in enumerate(data["articles"]):
+    for i, a in enumerate(raw_articles):
         try:
             articles.append(
                 Article(
