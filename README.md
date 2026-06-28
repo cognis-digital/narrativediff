@@ -20,6 +20,63 @@ pip install cognis-narrativediff
 narrativediff scan .            # → prioritized findings in seconds
 ```
 
+
+<!-- cognis:example:start -->
+## 🔎 Example output
+
+Real, reproducible output from the tool — runs offline:
+
+```console
+$ narrativediff-emit --version
+narrativediff 0.1.0
+```
+
+```console
+$ narrativediff-emit --help
+usage: narrativediff [-h] [--version] [--format {table,json}]
+                     {diff,outlets} ...
+
+News bias & framing diff across many outlets per event.
+
+positional arguments:
+  {diff,outlets}
+    diff                full bias/framing diff of a corpus JSON
+    outlets             quick per-outlet bias one-liners
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --format {table,json}
+                        output format (default: table)
+```
+
+> Blocks above are real `narrativediff` output — reproduce them from a clone.
+
+**Sample result format** _(illustrative values — run on your own data for real findings):_
+
+```
+{
+  "Findings": [
+    {
+      "id": "1234567890",
+      "title": "Suspicious Network Traffic",
+      "description": "Network traffic detected from an unknown IP address",
+      "severity": "medium",
+      "created_at": "2023-02-15T14:30:00Z"
+    },
+    {
+      "id": "2345678901",
+      "title": "Malware Detection",
+      "description": "A suspicious executable was detected on the system",
+      "severity": "high",
+      "created_at": "2023-02-16T10:45:00Z"
+    }
+  ]
+}
+```
+
+<!-- cognis:example:end -->
+
 ## Usage — step by step
 
 `narrativediff` diffs news bias and framing across many outlets for a single

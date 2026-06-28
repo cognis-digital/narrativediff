@@ -1,0 +1,17 @@
+$ narrativediff-emit --help
+
+usage: narrativediff [-h] [--version] [--format {table,json}]
+                     {diff,outlets} ...
+
+News bias & framing diff across many outlets per event.
+
+positional arguments:
+  {diff,outlets}
+    diff                full bias/framing diff of a corpus JSON
+    outlets             quick per-outlet bias one-liners
+
+options:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  --format {table,json}
+                        output format (default: table)
